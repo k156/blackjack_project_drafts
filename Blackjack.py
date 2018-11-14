@@ -13,29 +13,39 @@ class Deck:
 
 
 class Game:
-    while (card1 + card2 + ... <21):     
-        def start_game(self):
+    while (cardsum <21):
+        def game1(self):
             card = Deck.randomcard(deck)
-            
-            card.lstrip('s')
-            card.lstrip('c')
-            card.lstrip('h')
-            card.lstrip('d')
-            if card.find ('a'):
-                a_value = input("A값을 1과 11중에 선택하세요.")
-                if a_value == 1:
-                    cardlist.append(1)
-                if a_value == 11:
-                    cardlist.append(2)
-            if card.find('j,q,k'):
+            cardlist = list.append(card)
+            print(card)
+            print(carlist)
+            has_a = filter(lambda x: x[1] == "a", cardlist)
+            if has_a == True:
+                a value = input("A값을 1과 11중에 선택하세요.")
+                    if a_value == 1:
+                        numberlist.append(1)
+                    elif: 
+                        a_value == 11:
+                        numberlist.append(11)
+                    else:
+                        "1이랑 11중에 선택하라고."    
+            for i in range(4):
+                card.lstrip('{}'.format(shape))
+                shape = ['s','c','h','d']        
+                
+            has_jqk = filter(lambda x: x[1] != "a" and type[x] = str, cardlist)
                 cardlist.append(10)
-            Casting.to_int(card)
-            cardlist = []
-            cardlist.append(card)
+            
+
+        def game2(self):
+            self.game1()
+            numberlist = []
+            numberlist.append(Casting.to_int(card))
+            cardsum = reduce(lambda x, y: x + y, numberlist)
 
 
 class Player(Game):
-   
+
         if list의합 = 21:
             print("승")
         if list의합 > 21:
